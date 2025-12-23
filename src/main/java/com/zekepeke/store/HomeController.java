@@ -15,13 +15,13 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index() {
-        System.out.println("AppName: " + appName);
+        System.out.println(appName);
         return "index.html";
     }
 
     @RequestMapping("/looky")
     public String testing() {
-        System.out.println("AppName: " + appName);
+        System.out.println("In looky");
         return "looky.html";
     }
 
