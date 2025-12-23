@@ -1,5 +1,6 @@
 package com.zekepeke.store;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,9 @@ public class OrderService {
     public OrderService() {
 
     }
+
+    // need to use Autowired for multiple constructors of a class
+    @Autowired
     public OrderService(PaymentService paymentService) {
         this.paymentService = paymentService;
     }
