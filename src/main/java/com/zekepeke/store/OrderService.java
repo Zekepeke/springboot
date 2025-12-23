@@ -1,5 +1,10 @@
 package com.zekepeke.store;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+// Service (Component) is a general purpose annotation
+@Service
 public class OrderService {
 
     private PaymentService paymentService;
